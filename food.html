@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Food Photography</title>
+	<link rel="icon" type="image/gif/png" href="icon.png">
+</head>
+
+<style>
+    body {	background-color: white;
+         	 	margin:0px;
+		 		text-align:center;}
+	
+  	.navbar {	background-color: black;
+    		 		overflow: hidden;
+             	 	width: 100%;
+             	 	position: fixed;
+             	 	z-index:4; }
+             	 	
+    .navbar a {	font-family: "Century Gothic", CenturyGothic, AppleGothic, san-serif;
+    		 				float: right; 
+    		 				color: white;
+    		 				text-align: center;
+    		 				padding: 14px ;
+    		 				text-decoration: none;
+    		 				font-size: 17px; }
+    		 				
+     .navbar a:hover {	background-color: white;
+    		    		 			color: black; }
+    		    		 			
+    .title {	background-color: white;
+    			height:400px;
+    			width:100%;
+    			overflow:hidden;}
+    		    		 			
+    .title h1 {	font-family: "Century Gothic", CenturyGothic, AppleGothic, san-serif;
+    				color: black;
+    		 		text-align: center;
+    		 		font-size: 80px;
+    		 		margin-bottom:-30px;
+    		 		text-shadow: 2px 2px 4px #000000;}
+    				
+    .title p {	font-family: "Century Gothic", CenturyGothic, AppleGothic, san-serif;
+					font-size:25px;
+					margin-left: 120px;
+					margin-right: 120px;
+					color: #939393;
+					line-height:150%;}    		    		 			
+    	
+    	.picture {	background-color:white;
+					position:relative;
+					text-align:center;
+					margin-left:50px;
+					margin-right:50px;}
+					
+			
+   
+    .para {background-color:white;}	
+    .para  p {	font-family: "Century Gothic", CenturyGothic, AppleGothic, san-serif;
+					font-size:25px;
+					margin-left: 120px;
+					margin-right: 120px;
+					color: black;
+					text-align:justified;}
+					
+  	
+       	 	
+     .footer { background-color:black;
+					position: relative;
+    				height: 50px;
+    				width: 100%;
+    				overflow:hidden;}
+    				
+     .footer p { font-family: "Century Gothic", CenturyGothic, AppleGothic, san-serif;
+    				color: white;
+    		 		text-align: center;
+    		 		font-size: 20px;
+    		 		margin-bottom:10px;} 	
+    	
+    .mySlides {display:none;}
+    .slide{margin:0 auto;
+    							box-shadow:  0 0 0 10px  rgba(0,0,0,0.6);
+							-moz-box-shadow: 0 0 0 10px  rgba(0,0,0,0.6);
+							-webkit-box-shadow: 0 0 010px  rgba(0,0,0,0.6);
+							-o-box-shadow: 0 0 0 10px  rgba(0,0,0,0.6);}
+
+ 
+ .class  {
+    -webkit-animation: fadein 2s; 
+       -moz-animation: fadein 2s; 
+        -ms-animation: fadein 2s; 
+         -o-animation: fadein 2s;
+            animation: fadein 2s;
+}	   
+
+
+        @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}		    		 			
+ </style>
+
+<body>
+<div class="navbar">
+	<a href="macro.html"> Macro </a>
+	<a href="food.html"> Food </a>
+	<a href="bw.html"> B&W </a>
+	<a href="Landscape.html"> Landscape </a>
+	<a style="float:left" href="index.html"> Genres of Photography </a>
+</div>
+
+<br><br>
+
+
+<div class="class">
+<div class="title">
+<h1> Food Photography </h1>
+<br>
+<p>Food photography is a still life photography genre used to create attractive still life photographs of food. It is a specialization of commercial photography, the products of which are used in advertisements, magazines, packaging, menus or cookbooks. Professional food photography is a collaborative effort, usually involving an art director, a photographer, a food stylist, a prop stylist and their assistants.</p>
+</div>
+
+<div class="slide" style="max-width:980px">
+  <img class="mySlides" src="f1.jpg" style="width:100%">
+  <img class="mySlides" src="f2.jpg" style="width:100%">
+  <img class="mySlides" src="f3.jpg" style="width:100%">
+  <img class="mySlides" src="f4.jpg" style="width:100%">
+    <img class="mySlides" src="f5.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); 
+}
+</script>
+
+<br>
+
+<div class="para">
+ <p>Food photography may not be as popular as landscape photography or portraiture, but it&#39s a genre which holds many advantages over others. We all buy, prepare and consume food, so we don't need go to too much extra trouble in sourcing our subjects. It&#39s something that can be done in the convenience of our own homes (regardless of the weather), and by working with the seasons you have a continuously changing variety of subjects to work with. </p>
+</div>
+
+<div class="footer">
+<p>Find out <a href="http://www.shawacademy.com/blog/top-15-genres-of-photography-that-you-need-to-know/" target="_blank">more</a>!</p>
+</div>
+</div>
+
+
+</body>
+</html>

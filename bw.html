@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Black & White Photography</title>
+	<link rel="icon" type="image/gif/png" href="icon.png">
+</head>
+
+<style>
+    body {	background-color: white;
+         	 	margin:0px;
+		 		text-align:center;}
+	
+  	.navbar {	background-color: black;
+    		 		overflow: hidden;
+             	 	width: 100%;
+             	 	position: fixed; 
+             	 	z-index:4;}
+             	 	
+    .navbar a {	font-family: "Century Gothic", CenturyGothic, AppleGothic, san-serif;
+    		 				float: right; 
+    		 				color: white;
+    		 				text-align: center;
+    		 				padding: 14px ;
+    		 				text-decoration: none;
+    		 				font-size: 17px; }
+    		 				
+     .navbar a:hover {	background-color: white;
+    		    		 			color: black; }
+    
+    .title {	background-color: white;
+    			height:320px;
+    			width:100%;
+    			overflow:hidden;}
+    		    		 			
+    .title h1 {	font-family: "Century Gothic", CenturyGothic, AppleGothic, san-serif;
+    				color: black;
+    		 		text-align: center;
+    		 		font-size: 80px;
+    		 		margin-bottom:-30px;
+    		 		text-shadow: 2px 2px 4px #000000;}
+    				
+    .title p {	font-family: "Century Gothic", CenturyGothic, AppleGothic, san-serif;
+					font-size:25px;
+					margin-left: 120px;
+					margin-right: 120px;
+					color: #939393;
+					line-height:150%;}
+					
+	.picture {	background-color:white;
+					position:relative;
+					text-align:center;
+					margin-left:70px;
+					margin-right:70px;}
+					
+	img {	filter: none;
+  				-webkit-filter: grayscale(0%);
+    			border:0;
+    			position: relative;
+    			-webkit-transition: all 200ms ease-in;
+    			-webkit-transform: scale(1); 
+    			-ms-transition: all 200ms ease-in;
+    			ms-transform: scale(1); 
+    			-moz-transition: all 200ms ease-in;
+    			-moz-transform: scale(1);
+    			transition: all 200ms ease-in;
+    			transform: scale(1);   }
+
+	img:hover   {filter: gray;
+  						-webkit-filter: grayscale(100%);
+  						box-shadow: 0px 0px 150px #000000;
+    					z-index: 3;
+   						-webkit-transition: all 140ms ease-in;
+    					-webkit-transform: scale(1.1);
+   						-ms-transition: all 140ms ease-in;
+    					-ms-transform: scale(1.1);   
+    					-moz-transition: all 140ms ease-in;
+    					-moz-transform: scale(1.1);
+    					transition: all 140ms ease-in;
+    					transform: scale(1.1);}
+    					
+    					
+	.haha{margin-top:-4px;}
+	.hill{margin-top:-4px;
+			vertical-align:top;}
+	.c{margin-top:-4px;
+			vertical-align:top;}
+	.d{margin-top:-4px;
+		vertical-align:top;}			
+	.vertical{margin-top:-4px;}
+	
+	
+	    .para {background-color:white;}	
+    .para  p {	font-family: "Century Gothic", CenturyGothic, AppleGothic, san-serif;
+					font-size:25px;
+					margin-left: 120px;
+					margin-right: 120px;
+					color: black;
+					text-align:justified;}	
+		
+					
+	    ul {	font-family: "Century Gothic", CenturyGothic, AppleGothic, san-serif;
+			font-size:25px;
+    		display: inline-block;
+    		text-align:left;
+       	 	margin-top:-10px;
+       	 	margin-bottom:-10px;}  				
+					
+					
+	     .footer { background-color:black;
+					position: relative;
+    				height: 50px;
+    				width: 100%;
+    				overflow:hidden;}
+    				
+     .footer p { font-family: "Century Gothic", CenturyGothic, AppleGothic, san-serif;
+    				color: white;
+    		 		text-align: center;
+    		 		font-size: 20px;
+    		 		margin-bottom:10px;} 
+    		 		
+           @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#class  {
+    -webkit-animation: fadein 2s; 
+       -moz-animation: fadein 2s; 
+        -ms-animation: fadein 2s; 
+         -o-animation: fadein 2s;
+            animation: fadein 2s;
+} 		 		
+    		 										
+							    		 			
+ </style>
+
+<body>
+<div class="navbar">
+	<a href="macro.html"> Macro </a>
+	<a href="food.html"> Food </a>
+	<a href="bw.html"> B&W </a>
+	<a href="Landscape.html"> Landscape </a>
+	<a style="float:left" href="index.html"> Genres of Photography </a>
+</div>
+
+<br><br>
+
+
+<div id="class">
+<div class="title">
+<h1> Black & White Photography </h1>
+<br>
+<p>Most of the black and white photography styles are classic as it brings out the raw beauty of the subjects. Contrast and shadows go a long way in making your photos realistic and beautiful.</p>
+</div>
+
+<div class="picture">
+<img src="b1.jpg" class="city" width="480px" height="280px" class="b1" /><img src="b2.jpg" class="city" width="420px" height="280px" /><img src="b3.jpeg" class="haha" width="400px" height="300px" /><img src="b4.jpg" class="hill" width="500" height="300"/><img src="b5.jpg" width="210px" height="300" class="d"/><img src="b6.jpg" width="400px" height="300px" class="vertical"/><img src="l7.jpg" width="483px" height="287px" class="c"/>
+</div>
+
+<br>
+
+<div class="para">
+<p><b>Why shoot in Black and White?</b><p>
+<ul>
+  <li>Color No Longer Distracts</li>
+  <li>You&#39ll See Light Differently</li>
+  <li>It Helps Emphasize Emotion</li>
+  <li>It Helps Focus On Composition</li>
+</ul>
+ <p>Photography in its simplest form, is capturing shadows, mid-tones, and highlights. The benefit from shooting B&W is that it breaks down photography into a very basic interpretation of light. We are forced to forget about colors all together and focus more how we light our subject. Colors in a way distract you from the tonality of the image; colors interfere with your perception of light. We are able to clearly see how the light shapes our subject and how we can manipulate how the light hits the subject. </p>
+</div>
+
+<div class="footer">
+<p>Find out <a href="http://www.shawacademy.com/blog/top-15-genres-of-photography-that-you-need-to-know/" target="_blank">more</a>!</p>
+</div>
+</div>
+</body>
+</html>

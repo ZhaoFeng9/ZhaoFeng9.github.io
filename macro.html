@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Macro Photography</title>
+	<link rel="icon" type="image/gif/png" href="icon.png">
+</head>
+
+<style>
+    body {	background-color: white;
+         	 	margin:0px;
+		 		text-align:center;}
+	
+  	.navbar {	background-color: black;
+    		 		overflow: hidden;
+             	 	width: 100%;
+             	 	position: fixed;
+             	 	z-index:4; }
+             	 	
+    .navbar a {	font-family: "Century Gothic", CenturyGothic, AppleGothic, san-serif;
+    		 				float: right; 
+    		 				color: white;
+    		 				text-align: center;
+    		 				padding: 14px ;
+    		 				text-decoration: none;
+    		 				font-size: 17px; }
+    		 				
+     .navbar a:hover {	background-color: white;
+    		    		 			color: black; }
+    		    		 			
+    .title {	background-color: white;
+    			height:350px;
+    			width:100%;
+    			overflow:hidden;}
+    		    		 			
+    .title h1 {	font-family: "Century Gothic", CenturyGothic, AppleGothic, san-serif;
+    				color: black;
+    		 		text-align: center;
+    		 		font-size: 80px;
+    		 		margin-bottom:-30px;
+    		 		text-shadow: 2px 2px 4px #000000;}
+    				
+    .title p {	font-family: "Century Gothic", CenturyGothic, AppleGothic, san-serif;
+					font-size:25px;
+					margin-left: 120px;
+					margin-right: 120px;
+					color: #939393;
+					line-height:150%;} 
+					
+	    .para {background-color:white;}	
+    .para  p {	font-family: "Century Gothic", CenturyGothic, AppleGothic, san-serif;
+					font-size:25px;
+					margin-left: 120px;
+					margin-right: 120px;
+					color: black;
+					text-align:justified;}				
+					
+	    .mySlides {display:none;}
+    .slide{margin:0 auto;
+    							box-shadow:  0 0 0 10px  rgba(0,0,0,0.6);
+							-moz-box-shadow: 0 0 0 10px  rgba(0,0,0,0.6);
+							-webkit-box-shadow: 0 0 010px  rgba(0,0,0,0.6);
+							-o-box-shadow: 0 0 0 10px  rgba(0,0,0,0.6);}			
+							
+		     .footer { background-color:black;
+					position: relative;
+    				height: 50px;
+    				width: 100%;
+    				overflow:hidden;}
+    				
+     .footer p { font-family: "Century Gothic", CenturyGothic, AppleGothic, san-serif;
+    				color: white;
+    		 		text-align: center;
+    		 		font-size: 20px;
+    		 		margin-bottom:10px;} 						
+								 
+
+        @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+					
+	 .class  {
+    -webkit-animation: fadein 2s; 
+       -moz-animation: fadein 2s; 
+        -ms-animation: fadein 2s; 
+         -o-animation: fadein 2s;
+            animation: fadein 2s;
+}	 				
+ </style>
+
+<body>
+<div class="navbar">
+	<a href="macro.html"> Macro </a>
+	<a href="food.html"> Food </a>
+	<a href="bw.html"> B&W </a>
+	<a href="Landscape.html"> Landscape </a>
+	<a style="float:left" href="index.html"> Genres of Photography </a>
+</div>
+
+<br><br>
+
+
+<div class="class">
+<div class="title">
+<h1> Macro Photography </h1>
+<br>
+<p>It is extreme close-up photography, usually of very small subjects and living organisms like insects, in which the size of the subject in the photograph is greater than life size (though macrophotography technically refers to the art of making very large photographs). By some definitions, a macro photograph is one in which the size of the subject on the negative or image sensor is life size or greater. However, in other uses it refers to a finished photograph of a subject at greater than life size.</p>
+</div>
+<br><br>
+<div class="slide" style="max-width:980px">
+  <img class="mySlides" src="m1.jpg" style="width:100%">
+  <img class="mySlides" src="m2.jpg" style="width:100%">
+  <img class="mySlides" src="m3.jpg" style="width:100%">
+  <img class="mySlides" src="m4.jpg" style="width:100%">
+    <img class="mySlides" src="m5.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); 
+}
+</script>
+
+<br>
+
+<div class="para">
+ <p>Macro photography is one of the most popular forms of photography, and with good reason. It is easily accessible, and it is a very broad genre of photography. Studio pros can enjoy taking macro shots of leaves, flowers, and sluggish insects, maintaining total control over lighting. Nature lovers can spend hours outside, searching for hidden treasures among flowers and leaves. Plus, in non-photogenic locations, like many people&#39s backyards, macro photography makes it possible to take great images of nature without traveling at all. </p>
+</div>
+
+<div class="footer">
+<p>Find out <a href="http://www.shawacademy.com/blog/top-15-genres-of-photography-that-you-need-to-know/" target="_blank">more</a>!</p>
+</div>
+</div>
+
+</body>
+</html>
